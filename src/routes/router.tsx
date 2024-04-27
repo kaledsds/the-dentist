@@ -1,5 +1,5 @@
 import App from "@/App";
-import { ErrorPage, Favorites, Home } from "@/pages";
+import { Dentis, ErrorPage, Favorites, Home, Secretary } from "@/pages";
 import { createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -11,6 +11,14 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
+      },
+      {
+        path: "dashboard-dentist",
+        element: <Dentis />,
+      },
+      {
+        path: "dashboard-secretary",
+        element: <Secretary />,
       },
       {
         path: "favorites",

@@ -12,15 +12,15 @@ export interface NavigationItem {
 
 export const navigationItems: NavigationItem[] = [
   {
-    id: "favorites",
-    label: "Favorites",
-    link: "/favorites",
-    icon: IoHeart,
-  },
-  {
     id: "home",
     label: "Home",
     link: "/",
     icon: IoHome,
+  },
+  {
+    id: "favorites",
+    label: "Favorites",
+    link: "/favorites",
+    icon: IoHeart,
   },
 ];

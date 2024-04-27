@@ -24,7 +24,7 @@ export const SearchDrawer = () => {
             </button>
             <SearchInput
               className="border-l-0 rounded-none rounded-r-lg border-primary"
-              placeholder="Series, movies, Shows, actors"
+              placeholder="Search..."
             />
           </div>
           <DrawerClose asChild>
