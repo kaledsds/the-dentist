@@ -1,5 +1,5 @@
 {
-  "name": "dentist-fonts",
+  "name": "dentist-client",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -39,6 +39,9 @@
     "@radix-ui/react-toggle": "^1.0.3",
     "@radix-ui/react-toggle-group": "^1.0.4",
     "@radix-ui/react-tooltip": "^1.0.7",
+    "@tanstack/react-query": "^5.32.0",
+    "@tanstack/react-query-devtools": "^5.32.0",
+    "axios": "^1.6.8",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "cmdk": "^1.0.0",

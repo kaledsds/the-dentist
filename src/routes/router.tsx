@@ -1,29 +1,18 @@
 import App from "@/App";
-import { Dentis, ErrorPage, Favorites, Home, Secretary } from "@/pages";
+import { DashboardPage } from "@/modules/app/dashboard/views";
+import { HomePage } from "@/modules/app/home/views";
+import { PrescriptionList } from "@/modules/app/prescriptions/views/prescription.list";
 import { createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <ErrorPage />,
+    errorElement: <div>Error: 404</div>,
     children: [
-      {
-        index: true,
-        element: <Home />,
-      },
-      {
-        path: "dashboard-dentist",
-        element: <Dentis />,
-      },
-      {
-        path: "dashboard-secretary",
-        element: <Secretary />,
-      },
-      {
-        path: "favorites",
-        element: <Favorites />,
-      },
+      { index: true, element: <HomePage /> },
+      { path: "dashboard", element: <DashboardPage /> },
+      { path: "prescriptions", element: <PrescriptionList /> },
     ],
   },
 ]);

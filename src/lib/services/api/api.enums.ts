@@ -1,0 +1,7 @@
+/**
+ * Api keys
+ */
+export enum ApiKeysEnum {
+  PERESCRIPTION_LIST = "PERESCRIPTION_LIST",
+  PERESCRIPTION_DETAIL = "PERESCRIPTION_DETAIL",
+}

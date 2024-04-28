@@ -1,10 +1,10 @@
-import { MainLayout } from "@/layouts";
-import { ThemeProvider } from "@/providers";
 import { Outlet } from "react-router-dom";
+import { ThemeProvider } from "./modules/common/contexts";
+import { MainLayout } from "./modules/common/layouts";
 
 const App = () => {
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+    <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
       <MainLayout>
         <Outlet />
       </MainLayout>
